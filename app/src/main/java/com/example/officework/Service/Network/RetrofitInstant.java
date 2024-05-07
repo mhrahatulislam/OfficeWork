@@ -1,9 +1,10 @@
-package com.example.officework.Service.Repository;
+package com.example.officework.Service.Network;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class RetrofitInstant {
+public class RetrofitInstant
+{
 
     private static Retrofit retrofit;
     private static final String BASEURL = "https://catalog-writer.ejachai.com";
@@ -18,4 +19,5 @@ public class RetrofitInstant {
         }
         return retrofit;
     }
+
 }
